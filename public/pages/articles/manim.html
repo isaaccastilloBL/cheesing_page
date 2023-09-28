@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/code_highlight.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.png?" type="image/x-icon">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Manim is a powerful Python library for mathematical animation, perfect for creating interactive and educational visualizations.">
+    <meta name="keywords"
+        content="Manim, mathematical animation, Python, interactive visualizations, education, programming, mathematical visualizations, geometry, algebra, calculus">
+    <meta name="author" content="Cheesing">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 day">
+    <meta name="language" content="English">
+    <meta name="generator" content="Cheesing">
+
+    <title>Manim</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/assets/svg/logo.svg" alt="Cheesing">
+            </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/projects.html">Projects</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-links-mobile">
+            <a href="/pages/blog.html"><i class="fa-brands fa-readme"></i></a>
+            <a href="/pages/projects.html"><i class="fa-solid fa-diagram-project"></i></a>
+            <a href="/pages/contact.html"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="article">
+        <h4>Manim, animation engine</h4>
+        <small>July 20, 2023</small>
+        <a href="">Isaac Castillo</a>
+
+        <hr>
+
+        <p>When it comes to creating animations, there are many tools available to developers. However, one of the most
+            popular tools, specifically for mathematical animations, is Manim.</p>
+
+        <p>Manim is a free and open-source animation engine for explanatory math videos. It is used to create precise
+            animations programmatically, as opposed to having to animate manually in a GUI.</p>
+
+        <div class="image-container">
+            <img src="/assets/img/manim/OpeningManim.gif" alt="OpeningManim">
+        </div>
+
+        <h5>What is Manim?</h5>
+
+        <p>Manim is a free and open-source animation based on python. It was created by Grant Sanderson, also known as
+            3Blue1Brown, a popular math YouTuber.</p>
+
+        <p>Manim is a command-line tool, it is also a library that can be imported into python files. This allows users
+            to create animations programmatically.</p>
+
+        <h5>How does Manim work?</h5>
+
+        <p>Manim is a python library, meaning that it can be imported into python files. You can use PIP to install
+            Manim.</p>
+
+        <pre><code class="language-bash">pip install manim</code></pre>
+
+        <h5>First Steps</h5>
+
+        <p>Once you have installed Manim, you can start creating animations. To create an animation, you must create a
+            python file and import the Manim library.</p>
+
+        <pre><code class="language-python">from manim import *</code></pre>
+
+        <p>Once you have imported the library, you can start creating animations. In manim all animations are classes
+            that inherit from the Scene class.</p>
+
+        <pre><code class="language-python"><span class="keyword">from</span> <span class="class-name">manim</span> import <span class="operator">*</span>
+
+class <span class="function">MyAnimation</span>(<span class="class-name">Scene</span>):
+    def <span class="function">construct</span>(<span class="variable">self</span>):
+        <span class="comment"># Animation code</span></code></pre>
+
+        <p>You can use the different methods of the Scene class to create animations. For example, the play method can
+            be used to play an animation.</p>
+
+        <pre><code class="language-python"><span class="keyword">from</span> <span class="class-name">manim</span> import <span class="operator">*</span>
+
+class <span class="function">MyAnimation</span>(<span class="class-name">Scene</span>):
+    def <span class="function">construct</span>(<span class="variable">self</span>):
+        <span class="comment"># Animation code</span>
+        <span class="variable">self</span>.play(<span class="class-name">Create</span>(<span class="class-name">Circle</span>()))</code></pre>
+
+        <p>Manim has many different classes that can be used to create animations. For example, the
+            <strong>Circle</strong> class can be
+            used to create a circle.
+        </p>
+
+        <div class="image-container">
+            <img src="/assets/img/manim/CreateCircle-1.gif" alt="Create-Circle">
+        </div>
+
+        <p><strong>Text:</strong> You can also use the Text class to create text.</p>
+
+        <div class="image-container">
+            <img src="/assets/img/manim/JustifyText-1.gif" alt="Text">
+        </div>
+
+        <p><strong>MathTex:</strong> The MathTex class can be used to create mathematical expressions. Also you can use
+            LaTex to create mathematical expressions.</p>
+
+        <div class="image-container">
+            <img src="/assets/img/manim/LaTeXAlignEnvironment-1.webp" alt="MathTex">
+        </div>
+
+        <p><strong>ImageMobject:</strong> The ImageMobject class can be used to create images.</p>
+
+        <div class="image-container">
+            <img src="/assets/img/manim/ImageInterpolationEx-1.webp" alt="ImageMobject">
+        </div>
+
+        <h5>More of Manim</h5>
+
+        <p>Manim has many more classes that can be used to create animations. You can check out the <a
+                href="https://docs.manim.community/en/stable/index.html# target=" _blank"">documentation</a> to learn
+            more about Manim.</p>
+
+        <p>You can use transformations to move objects around the screen.</p>
+
+        <div class="image-container">
+            <img src="/assets/img/manim/WarpSquare.gif" alt="Transform">
+        </div>
+
+        <p>You can also use complex transformations to create more complex animations. For example, you can use the
+            <strong>Transform matching text</strong> method to transform one text into another.
+        </p>
+
+        <pre><code class="language-python"><span class="keyword">from</span> <span class="class-name">manim</span> import <span class="operator">*</span>
+
+class <span class="function">MyAnimation</span>(<span class="class-name">Scene</span>):
+    def <span class="function">construct</span>(<span class="variable">self</span>):
+        variables = VGroup(MathText(<span class="string">"a"</span>), MathText(<span class="string">"b"</span>), MathText(<span class="string">"c"</span>)).arrange_submobjects().shift(UP)
+        
+        eq1 = MathTex(<span class="string">"{{x}}^2"</span>, <span class="string">"+" </span>, <span class="string">"{{y}}^2"</span>, <span class="string">"="</span>, <span class="string">"{{z}}^2"</span>)
+        eq2 = MathTex(<span class="string">"{{a}}^2"</span>, <span class="string">"+" </span>, <span class="string">"{{b}}^2"</span>, <span class="string">"="</span>, <span class="string">"{{c}}^2"</span>)
+        aq3 = MathTex(<span class="string">"{{a}}^2"</span>, <span class="string">"="</span>, <span class="string">"{{c}}^2"</span>, <span class="string">"-"</span>, <span class="string">"{{b}}^2"</span>)
+
+        self.add(eq1)
+        self.wait(<span class="number">0.5</span>)
+        self.play(TransformMatchingTex(Group(eq1, variables), eq2))
+        self.wait(<span class="number">0.5</span>)
+        self.play(TransformMatchingTex(eq2, eq3))
+        self.wait(<span class="number">0.5</span>)</code></pre>
+
+        <p>Can obtain the following animation:</p>
+
+        <div class="image-container">
+            <img src="/assets/img/manim/MatchingEquationParts-1.gif" alt="TransformMatchingTex">
+        </div>
+
+        <h5>Conclusion</h5>
+
+        <p>Manim is a free and open-source animation engine for explanatory math videos. It is used to create precise
+            animations programmatically, the animations can be exported to video files.</p>
+
+        <p>For more information about Manim, you can check out the:</p>
+
+        <a href="https://www.manim.community/" target="_blank"><i class="fa-solid fa-globe"></i>Official Website</a>
+        <a href="https://docs.manim.community/en/stable/index.html#" target="_blank"><i
+                class="fa-solid fa-book"></i>Documentation</a>
+
+        <!-- <p>Or you can check my<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i>Manim Videos</a> on
+            YouTube.</p> -->
+
+    </section>
+
+    <hr>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="/pages/privacy.html">Privacy</a>
+        <div class="social">
+            <a href="https://www.facebook.com/cheesing.BL" target="_blank"><i class="fab fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/cheesing/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fab fa-square-twitter"></i></a>
+        </div>
+        <small class="copyright">
+            &copy; 2023 Cheesing.
+        </small>
+    </footer>
+
+</body>
+
+<script src="https://kit.fontawesome.com/43139af2bd.js" crossorigin="anonymous"></script>
+
+</html>

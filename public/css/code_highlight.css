@@ -1,0 +1,65 @@
+pre {
+    border-radius: 10px;
+    border: 1px solid #5f5f5f;
+    padding: 1em;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+pre code {
+    display: block;
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e6e1dc;
+}
+
+pre::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: #e6e1dc;
+}
+
+pre::-webkit-scrollbar-track {
+    background-color: #23241f;
+}
+
+pre code span {
+    display: inline-block;
+}
+
+/* General Syntax Highlighting */
+
+pre code span.comment {
+    color: #6a9955;
+}
+
+pre code span.string {
+    color: #ce9178;
+}
+
+pre code span.number {
+    color: #b5cea8;
+}
+
+pre code span.keyword {
+    color: #d4d4d4;
+}
+
+pre code span.function {
+    color: #dcdcaa;
+}
+
+pre code span.class-name {
+    color: #4ec9b0;
+}
+
+pre code span.plain-text {
+    color: #d4d4d4;
+}
+
+pre code span.operator {
+    color: #d4d4d4;
+}

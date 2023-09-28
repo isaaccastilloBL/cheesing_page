@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/code_highlight.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.png?" type="image/x-icon">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Discord.py simplifies bot development for Discord, offering an intuitive Python library for creating versatile bots with ease. Explore key features and examples of its usage.">
+    <meta name="keywords"
+        content="Discord.py, Discord bot development, Python library, bot commands, asynchronous programming, Discord bot examples, Discord bot community">
+    <meta name="author" content="Cheesing">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 day">
+    <meta name="language" content="English">
+    <meta name="generator" content="Cheesing">
+
+    <title>Discord PY</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/assets/svg/logo.svg" alt="Cheesing">
+            </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/projects.html">Projects</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-links-mobile">
+            <a href="/pages/blog.html"><i class="fa-brands fa-readme"></i></a>
+            <a href="/pages/projects.html"><i class="fa-solid fa-diagram-project"></i></a>
+            <a href="/pages/contact.html"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="article">
+        <h4>Discord PY</h4>
+        <small>April 17, 2023</small>
+        <a href="">Isaac Castillo</a>
+
+        <hr>
+
+        <p>
+            In the world of Discord bot development, various technologies empower us to create intriguing applications
+            of this kind. This environment blends the power of programming with real-time communication, and this is
+            where Discord.py emerges as a robust library that greatly simplifies the creation of dynamic and interactive
+            bots.
+        </p>
+
+        <div class="image-container">
+            <img src="/assets/img/discord-py/discord-py.webp" alt="Discord PY">
+        </div>
+
+        <h5>Exploring Discord.py</h5>
+
+        <p>
+            Discord.py is a Python library explicitly designed to create bots that operate on the Discord platform. This
+            library significantly simplifies interaction with the Discord API, becoming the preferred choice for
+            developers aiming to build feature-rich bots for Discord servers.
+        </p>
+
+        <h5>Features of Discord.py</h5>
+
+        <p>
+            <strong>• Ease of Use:</strong> Discord.py stands out for its intuitive and comprehensible API. This
+            accessibility caters to both beginners and experienced developers. The provided methods and functions are
+            clear and concise, facilitating the creation of custom commands and responses.
+        </p>
+
+        <p>
+            <strong>• Versatile Functionality:</strong> With Discord.py, you can create bots ranging from automated
+            moderators to entertainment and server management bots. The possibilities are nearly limitless.
+        </p>
+
+        <p>
+            <strong>• Active Community:</strong> The community around Discord.py is active and dedicated. You'll find
+            ample documentation, tutorials, and code examples to assist you in your development.
+        </p>
+
+        <p>
+            <strong>• Open Source:</strong> Discord.py is an open-source project in constant evolution, thanks to
+            contributions from developers worldwide. This ensures that the library stays updated with the latest
+            features and changes in Discord.
+        </p>
+
+        <p>
+            Let's take a look at a simple example of creating a bot that responds to a command:
+        </p>
+
+        <pre><code class="language-python"><span class="keyword">import</span> <span class="class-name">discord</span>
+<span class="keyword">from</span> <span class="class-name">discord.ext</span> <span class="keyword">import</span> <span class="class-name">commands</span>
+
+bot <span class="operator">=</span> <span class="class-name">commands</span>.<span class="function">Bot</span>(<span class="argument">command_prefix</span><span class="operator">=</span><span class="string">'!'</span>)
+
+<span class="annotation">@bot.command()</span>
+<span class="keyword">async</span> <span class="keyword">def</span> <span class="function">greet</span>(<span class="argument">ctx</span>):
+    <span class="keyword">await</span> <span class="argument">ctx</span>.<span class="function">send</span>(<span class="string">'Hello, I am a sample bot!'</span>)
+
+<span>bot.<span class="function">run</span>(<span class="string">'YOUR_BOT_TOKEN'</span>)
+</code></pre>
+
+        <h5>Discord Bots Created with Discord.py</h5>
+
+        <p>
+            <strong><a href="https://mee6.xyz">• Mee6:</a></strong> Mee6 is a popular moderation and leveling bot that
+            helps Discord server
+            administrators manage and engage their communities effectively.
+        </p>
+
+        <div class="image-container">
+            <a href="https://mee6.xyz">
+                <img src="/assets/img/discord-py/mee6-bot.webp" alt="Mee6">
+            </a>
+        </div>
+
+        <p>
+            <strong><a href="https://rythm.fm/">• Rythm:</a></strong> Rythm is a feature-rich music bot that allows
+            users to play music from various
+            sources in their Discord servers.
+        </p>
+
+        <div class="image-container">
+            <a href="https://rythm.fm/">
+                <img src="/assets/img/discord-py/rythm-bot.webp" alt="Rythm">
+            </a>
+        </div>
+
+        <p>
+            <strong><a href="https://carl.gg">• Carl-bot:</a></strong> Carl-bot offers a variety of utility and
+            moderation features, making it a
+            valuable addition to many Discord communities.
+        </p>
+
+        <div class="image-container">
+            <a href="https://carl.gg">
+                <img src="/assets/img/discord-py/carl-bot.webp" alt="Carl-bot">
+            </a>
+        </div>
+
+        <h5>Examples of Discord.py Usage</h5>
+
+        <pre><code><span class="keyword">import</span> <span class="class-name">discord</span>
+<span class="keyword">from</span> <span class="class-name">discord.ext</span> <span class="keyword">import</span> <span class="class-name">commands</span>
+
+bot <span class="operator">=</span> <span class="class-name">commands</span>.<span class="function">Bot</span>(<span class="argument">command_prefix</span><span class="operator">=</span><span class="string">'!'</span>)
+
+<span class="annotation">@bot.command()</span>
+<span class="keyword">async</span> <span class="keyword">def</span> <span class="function">play</span>(<span class="argument">ctx</span>, <span class="argument">url</span>):
+    <span class="variable">voice_channel</span> <span class="operator">=</span> <span class="argument">ctx</span>.<span class="variable">author</span>.<span class="function">voice</span>.<span class="variable">channel</span>
+    <span class="variable">voice_client</span> <span class="operator">=</span> <span class="keyword">await</span> <span class="variable">voice_channel</span>.<span class="function">connect</span>()
+
+    <span class="comment"># Here, you would implement the logic to play music from the provided URL.</span>
+    <span class="comment"># Libraries like youtube-dl or discord.py can be used for this task.</span>
+
+<span class="annotation">@bot.command()</span>
+<span class="keyword">async</span> <span class="keyword">def</span> <span class="function">stop</span>(<span class="argument">ctx</span>):
+    <span class="variable">voice_client</span> <span class="operator">=</span> <span class="class-name">discord</span>.<span class="function">utils</span>.<span class="function">get</span>(<span class="variable">bot</span>.<span class="variable">voice_clients</span>, <span class="argument">guild</span><span class="operator">=</span><span class="argument">ctx</span>.<span class="variable">guild</span>)
+    <span class="keyword">if</span> <span class="variable">voice_client</span>.<span class="function">is_playing</span>():
+        <span class="variable">voice_client</span>.<span class="function">stop</span>()
+        <span class="keyword">await</span> <span class="variable">voice_client</span>.<span class="function">disconnect</span>()
+
+        <span>bot.<span class="function">run</span>(<span class="string">'YOUR_BOT_TOKEN'</span>)
+</code></pre>
+
+        <p>
+            This is just one example of the many possibilities that Discord.py offers for creating custom Discord bots.
+            From moderation commands to interactive games, Discord.py is a powerful tool to meet the needs of your
+            Discord server.
+        </p>
+
+        <h5>Conclusion</h5>
+
+        <p>
+            Discord.py has significantly simplified the process of developing bots for Discord, enabling developers to
+            create dynamic and useful bots. With an active and continuously growing community, this library remains a
+            popular choice for those looking to excel in Discord bot development.
+        </p>
+
+    </section>
+
+    <hr>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="/pages/privacy.html">Privacy</a>
+        <div class="social">
+            <a href="https://www.facebook.com/cheesing.BL" target="_blank"><i class="fab fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/cheesing/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fab fa-square-twitter"></i></a>
+        </div>
+        <small class="copyright">
+            &copy; 2023 Cheesing.
+        </small>
+    </footer>
+
+</body>
+
+<script src="https://kit.fontawesome.com/43139af2bd.js" crossorigin="anonymous"></script>
+
+</html>
